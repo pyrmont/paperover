@@ -1,0 +1,14 @@
+# The usual suspects
+Thumbs.db
+Desktop.ini
+__MACOSX
+.DS_Store
+*.tmproj
+*.swp
+*~
+*.bak
+*.sqlite
+*.sql
+*.psd
+*.db
+doc/
