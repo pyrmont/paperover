@@ -33,8 +33,8 @@ else
     }
     password = cli.ask("Please enter your Instapaper password:") { |q| q.echo = "*" }
     rss_uri = cli.ask("Please enter the URI of the RSS feed:") { |q|
-        q.responses[:not_valid] = 'URI most be a valid address beginning with http// or https://.'
-        q.validate = /\A#{URI::regexp(['http', 'https'])}\z/
+        q.responses[:not_valid] = 'URI most be a valid address beginning with https://.'
+        q.validate = /\A#{URI::regexp(['https'])}\z/
     }
     source_slug = cli.ask("Please enter the URI slug of the source folder:") { |q|
         q.responses[:not_valid] = 'URI slug cannot be blank.'
