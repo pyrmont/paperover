@@ -16,7 +16,7 @@ if ARGV.length == 1
     source_slug = config["source_slug"]
     destination_id = config["destination_id"]
     public_status = config["public_status"]
-    read_status = config["read_status"]
+    unread_status = config["unread_status"]
 elsif ARGV.length == 7
     username = ARGV[0]
     password = ARGV[1]
@@ -24,7 +24,7 @@ elsif ARGV.length == 7
     source_slug = ARGV[2]
     destination_id = ARGV[3]
     public_status = (ARGV[5] == "true") ? true : false
-    read_status = (ARGV[6] == "true") ? true : false
+    unread_status = (ARGV[6] == "true") ? true : false
 else
     cli = HighLine.new
     username = cli.ask("Please enter your Instapaper username:") { |q|
@@ -45,7 +45,7 @@ else
         q.validate = /^[1-9][0-9]*$/
     }
     public_status = cli.agree("Do you want the links to be public?")
-    read_status = cli.agree("Do you want the links to be marked as 'toread'?")
+    unread_status = cli.agree("Do you want the links to be marked as 'toread'?")
 end
 
 # Set up the base URI and slugs.
@@ -85,7 +85,7 @@ loop do
         link["extended"] = item.css("description").text
         link["time"] =  DateTime.parse(item.css("pubDate").text).strftime("%Y-%m-%dT%H:%M:%SZ")
         link["shared"] = (public_status) ? "yes" : "no"
-        link["toread"] = (read_status) ? "yes" : "no"
+        link["toread"] = (unread_status) ? "yes" : "no"
         links.push(link)
     end
 

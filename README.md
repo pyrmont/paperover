@@ -31,9 +31,9 @@ To run Paperover you need to provide the following information:
 * `source_slug`: the path for the folder you are exporting (eg. `archive`);
 * `destination_id`: the folder ID you will move the articles to after export (eg. `1234567`);
 * `public_status`: whether the articles should be considered public or not;
-* `read_status`: whether the articles should be considered read or not.
+* `unread_status`: whether the articles should be considered read or not.
 
-*Please note that Paperover's export script is a **destructive** operation. The articles in the target folder will be **moved** to the folder you specify.*
+*Please note that Paperover's export script is a __destructive__ operation. The articles in the target folder will be __moved__ to the folder you specify.*
 
 ## Requirements
 
@@ -61,7 +61,7 @@ If you execute `ruby export.rb <config.yaml>`, Paperover will read the parameter
 
 ### Command Line Configuration
 
-If you execute `ruby export.rb <username> <password> <rss_uri> <source_slug> <destination_id> <public_status> <read_status>`, Paperover will use the given arguments as its parameters.
+If you execute `ruby export.rb <username> <password> <rss_uri> <source_slug> <destination_id> <public_status> <unread_status>`, Paperover will use the given arguments as its parameters.
 
 ## Frequently Asked Questions
 
