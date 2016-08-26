@@ -65,13 +65,13 @@ If you execute `ruby export.rb <username> <password> <rss_uri> <source_slug> <de
 
 ## Frequently Asked Questions
 
-**Q. How can I find the `source_slug` parameter?**
+**Q. How can I find the `source_slug` parameter?**  
 The `source_slug` parameter is the part of the URI after `https://www.instapaper.com/`. For the Archive folder, it is `archive`. For other folders it will look something like `u/folder/<folder_id>/<folder_name>`.
 
-**Q. What can I find the `destination_id` parameter?**
+**Q. What can I find the `destination_id` parameter?**  
 The `destination_id` parameter is the number that is included in the URI of the folder (see the question above for an example).
 
-**Q. Can I export all of the articles at once?**
+**Q. Can I export all of the articles at once?**  
 No, Paperover doesn't support exporting from multiple folders at the same time.
 
 
