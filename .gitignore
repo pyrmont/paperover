@@ -1,3 +1,7 @@
+# Paperover specific
+articles.json
+config.yaml
+
 # The usual suspects
 Thumbs.db
 Desktop.ini

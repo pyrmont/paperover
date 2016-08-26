@@ -1,0 +1,7 @@
+username: "user@example.com"
+password: "password"
+rss_uri: "https://www.instapaper.com/archive/rss/7654321/randomcharacters"
+source_slug: "archive"
+destination_id: 1234567
+public_status: false
+read_status: false
