@@ -13,7 +13,7 @@ Paperover exports a JSON file for the designated folder that contains the follow
 * description; and
 * date and time saved to Instapaper.
 
-In addition, Paperover allows the user to set for each export whether the links to be exported should be considered public or private and whether they should be marked read or unread.
+In addition, Paperover allows the user to set for each export whether the links to be exported should be considered public or private, whether they should be marked read or unread and a set of comma-separated tags to be associated with each link.
 
 Paperover works by:
 
@@ -31,7 +31,8 @@ To run Paperover you need to provide the following information:
 * `source_slug`: the path for the folder you are exporting (eg. `archive`);
 * `destination_id`: the folder ID you will move the articles to after export (eg. `1234567`);
 * `public_status`: whether the articles should be considered public or not;
-* `unread_status`: whether the articles should be considered read or not.
+* `unread_status`: whether the articles should be considered read or not;
+* `tags`: a comma-separated list of tags.
 
 *Please note that Paperover's export script is a __destructive__ operation. The articles in the target folder will be __moved__ to the folder you specify.*
 
@@ -73,7 +74,6 @@ The `destination_id` parameter is the number that is included in the URI of the 
 
 **Q. Can I export all of the articles at once?**  
 No, Paperover doesn't support exporting from multiple folders at the same time.
-
 
 ## Copyright
 

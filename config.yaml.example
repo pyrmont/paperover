@@ -5,3 +5,4 @@ source_slug: "archive"
 destination_id: 1234567
 public_status: false
 unread_status: false
+tags: "instapaper"
