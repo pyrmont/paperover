@@ -62,7 +62,7 @@ If you execute `ruby export.rb <config.yaml>`, Paperover will read the parameter
 
 ### Command Line Configuration
 
-If you execute `ruby export.rb <username> <password> <rss_uri> <source_slug> <destination_id> <public_status> <unread_status>`, Paperover will use the given arguments as its parameters.
+If you execute `ruby export.rb <username> <password> <rss_uri> <source_slug> <destination_id> <public_status> <unread_status> <tags>`, Paperover will use the given arguments as its parameters.
 
 ## Frequently Asked Questions
 
