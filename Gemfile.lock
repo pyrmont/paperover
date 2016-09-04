@@ -30,9 +30,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  highline (= 1.7.8)
-  http (= 2.0.3)
-  oga (= 2.3)
+  highline (~> 1.7.8)
+  http (~> 2.0.3)
+  oga (~> 2.3)
 
 BUNDLED WITH
    1.12.5
