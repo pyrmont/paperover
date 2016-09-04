@@ -110,7 +110,7 @@ The `destination_id` parameter is the number that is included in the URI of the 
 **Q. Can I export all of the articles at once?**  
 No, Paperover doesn't support exporting from multiple folders at the same time.
 
-**Q. Can't I just upload the exported file to Pinboard's website?
+**Q. Can't I just upload the exported file to Pinboard's website?**  
 At this stage, the file generated does not conform to the format expected by Pinboard's website and the file will fail to parse correctly.
 
 ## Copyright
