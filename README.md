@@ -82,7 +82,7 @@ If all the necessary parameters are passed as command line arguments, Paperover 
 
 ### Overview
 
-Paperout allows the links (and associated metadata) exported by `export.rb` to be imported to Pinboard via its API.
+Paperover allows the links (and associated metadata) exported by `export.rb` to be imported to Pinboard via its API.
 
 To run Paperover's Pinboard import script you need to provide the following information:
 
@@ -109,6 +109,9 @@ The `destination_id` parameter is the number that is included in the URI of the 
 
 **Q. Can I export all of the articles at once?**  
 No, Paperover doesn't support exporting from multiple folders at the same time.
+
+**Q. Can't I just upload the exported file to Pinboard's website?
+At this stage, the file generated does not conform to the format expected by Pinboard's website and the file will fail to parse correctly.
 
 ## Copyright
 
